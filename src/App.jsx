@@ -17,7 +17,6 @@ function App() {
       <h1>Welcome to Health Care</h1>
       <div className="card">
         <h2>Made with ❤️</h2>
-        <h2>Made with ❤️</h2>
       </div>
     </>
   );
