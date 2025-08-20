@@ -1,25 +1,26 @@
 import React from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  const navigate = useNavigate();
+
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="landing-container">
+      <header className="landing-header">
+        <h1>Welcome to Health Care</h1>
+        <p>Your trusted companion for patient management</p>
+      </header>
+
+      <div className="button-group">
+        <button onClick={() => navigate("/register")}>Register Patient</button>
+        <button onClick={() => navigate("/login")}>Login</button>
       </div>
-      <h1>Welcome to Health Care</h1>
-      <div className="card">
-        <h2>Made with ❤️</h2>
-        {/* <p>Test line</p> */}
-      </div>
-    </>
+
+      <footer className="landing-footer">
+        <p>Made with ❤️ | Health Care System</p>
+      </footer>
+    </div>
   );
 }
 
