@@ -17,7 +17,7 @@ function App() {
       <h1>Welcome to Health Care</h1>
       <div className="card">
         <h2>Made with ❤️</h2>
-        <p>Test line</p>
+        {/* <p>Test line</p> */}
       </div>
     </>
   );
