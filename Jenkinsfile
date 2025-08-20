@@ -20,5 +20,12 @@ pipeline {
                 sh 'npm test'
             }
         }
+        stage('Deploy to Staging') {
+            when { expression { return env.GIT_TAG != null } }
+            steps {
+                echo "Deploying version ${GIT_TAG} to staging..."
+                // TODO: Add deployment commands once staging server is ready
+            }
+        }
     }
 }
