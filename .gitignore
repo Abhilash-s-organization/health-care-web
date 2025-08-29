@@ -34,6 +34,11 @@ dist-ssr
 build/
 coverage/
 
+# Excluded directories
+routes/
+server/
+services/
+
 # OS generated files
 Thumbs.db
 .DS_Store
